@@ -38,7 +38,7 @@ enum ktpnik_result ktpnik_parse(uint64_t nik, struct ktpnik_t* ktp_nik){
 		k->birthday.date -= NIK_ISFEMALE_FLAG;
 	}
 	
-	k->local_registration_index = (uint8_t)__clm(nik / NIK_REGISTNUM_DIV, NIK_REGISTNUM_MAX);
+	k->person_unique_id = (uint16_t)__clm(nik / NIK_REGISTNUM_DIV, NIK_REGISTNUM_MAX);
 	
 	if(k->birthday.date > 31 || k->birthday.month > 12) return KTPNIK_ERROR_INVALID_DATE;
 	

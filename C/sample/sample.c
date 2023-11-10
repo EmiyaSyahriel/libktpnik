@@ -22,7 +22,7 @@ int main(int argc, const char* argv[])
 	
 	printf("Ulang Tahun : %02d/%02d/%02d\n", data.birthday.date, data.birthday.month, data.birthday.year);
 	
-	printf("Indeks Registrasi Kecamatan : %04d\n", data.local_registration_index);
+	printf("Indeks Registrasi Kecamatan : %04d\n", data.person_unique_id);
 	
 	return 0;
 }

@@ -12,7 +12,7 @@ Based on [Disdukcapil NIK Format (Indonesian)](https://dispenduk.mojokertokota.g
 - `DD` - Birthday Date (+40 if Resident is Woman)
 - `EE` - Birthday Month
 - `FF` - Birthday Year (2-Digit)
-- `XXXX` - Registration Index (Index of person with same location and birthday)
+- `XXXX` - Person Unique ID (Incremental Index of person with same location and 2-digit year birthday)
 
 ### Sample
 > `3502026410010013` - `35-02-02-64-10-01-0013`
@@ -22,7 +22,7 @@ Based on [Disdukcapil NIK Format (Indonesian)](https://dispenduk.mojokertokota.g
 - `64` = Female - Born 24
 - `10` = October
 - `01` = Year 01, Either 1901, 2001 or 2101.
-- `0013` = 13th Registered Person with same Birthday (with 2-digit year) and Registration Location (Incremental).
+- `0013` = 13th Registered Person with same Birthday and Registration Location.
 
 ## Library usages :
 Please refer to the docs

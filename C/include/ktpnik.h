@@ -26,9 +26,9 @@ struct ktpnik_t {
 	struct birthday_t {
 		uint8_t date;
 		uint8_t month;
-		uint16_t year;
+		uint8_t year;
 	} birthday;
-	uint16_t local_registration_index;
+	uint16_t person_unique_id;
 };
 
 enum ktpnik_result {
