@@ -4,7 +4,7 @@
 int main(int argc, const char* argv[])
 {
 	struct ktpnik_t data;
-	const uint64_t nik = 3504132410010001;
+	const uint64_t nik = 3902136410010013;
 	enum ktpnik_result result = ktpnik_parse(nik, &data);
 	
 	if(result != KTPNIK_SUCCESS){
