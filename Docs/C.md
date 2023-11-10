@@ -3,7 +3,7 @@
 ```cmake
 add_subdirectory(third_party/ktpnik/C)
 
-target_link_libraries()
+target_link_libraries(target_name PRIVATE ktpnik)
 ```
 To build, with static link (command line) :
 ```bash
