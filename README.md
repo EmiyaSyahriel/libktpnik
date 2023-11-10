@@ -14,15 +14,15 @@ Based on [Disdukcapil NIK Format (Indonesian)](https://dispenduk.mojokertokota.g
 - `FF` - Birthday Year (2-Digit)
 - `XXXX` - Person Unique ID (Incremental Index of person with same location and 2-digit year birthday)
 
-### Sample
-> `3502026410010013` - `35-02-02-64-10-01-0013`
+### Sample (Fictional)
+> `3502027102019913` - `35-02-02-71-02-01-9913`
 - `35` = East Java
 - `02` = Ponorogo Regency
 - `02` = Ngrayun Region
-- `64` = Female - Born 24
-- `10` = October
+- `64` = Female - Born 31
+- `02` = February
 - `01` = Year 01, Either 1901, 2001 or 2101.
-- `0013` = 13th Registered Person with same Birthday and Registration Location.
+- `9913` = 9913th Registered Person with same Birthday and Registration Location.
 
 ## Library usages :
 Please refer to the docs
