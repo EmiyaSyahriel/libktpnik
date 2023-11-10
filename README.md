@@ -19,7 +19,7 @@ Based on [Disdukcapil NIK Format (Indonesian)](https://dispenduk.mojokertokota.g
 - `35` = East Java
 - `02` = Ponorogo Regency
 - `02` = Ngrayun Region
-- `64` = Female - Born 31
+- `71` = Female - Born 31
 - `02` = February
 - `01` = Year 01, Either 1901, 2001 or 2101.
 - `9913` = 9913th Registered Person with same Birthday and Registration Location.
