@@ -4,7 +4,7 @@ Multilingual library to parse KTP NIK (Indonesian Resident Identification Number
 ## Warning : KEEP YOUR NIK AWAY FROM INTERNET! YOU ARE A POTENTIAL PREY TO ROGUE JUDOL AND PINJOL USERS! YOU DO NOT WANT TO BE BLACKMAILED, RIGHT!?
 
 ## How it Works
-Based on (Disdukcapil Format Info (Indonesian))[https://dispenduk.mojokertokota.go.id/home/berita/Arti-kode-angka-dalam-NIK-E-KTP], NIK consists of multiple data concatenated together at this format:
+Based on [Disdukcapil Format Info (Indonesian)](https://dispenduk.mojokertokota.go.id/home/berita/Arti-kode-angka-dalam-NIK-E-KTP), NIK consists of multiple data concatenated together at this format:
 > `AABBCCDDEEFFXXXX` = `AA-BB-CC-DD-EE-FF-XXXX`
 - `AA` - Registration Province
 - `BB` - Registration City / Regency
