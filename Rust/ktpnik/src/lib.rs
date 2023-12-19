@@ -30,6 +30,9 @@ pub fn parse(nik: u64, retval: &mut NikType) -> KtpNikError {
     retval.region =     ((nik / 10000000000) % 100) as u8;
     retval.birthdate =  ((nik / 100000000) % 100) as u8;
     retval.is_female = retval.birthdate > 40;
+    if(retval.is_female){
+        retval.birthdate -= 40;
+    }
     retval.birthmonth = ((nik / 1000000) % 100) as u8;
     retval.birthyear =  ((nik / 10000) % 100) as u8;
     retval.uid = (nik % 10000) as u16;
