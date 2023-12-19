@@ -5,7 +5,7 @@ const smp_nik_info = u64(3502136410016213)
 
 fn main() {
 	mut ktp := ktpnik.KtpNik {}
-	err := ktpnik.ktpnik_parse(smp_nik_info, mut &ktp)
+	err := ktpnik.parse(smp_nik_info, mut &ktp)
 	if err != ktpnik.KtpNikError.success {
 		println("Error parsing NIK ${smp_nik_info} : ${err}");
 		exit(i32(err))

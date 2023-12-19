@@ -20,7 +20,7 @@ pub enum KtpNikError as u32 {
 
 const min_nik_info := u64(1101010101000001)
 
-pub fn ktpnik_parse(nik u64, mut retval &KtpNik) KtpNikError {
+pub fn parse(nik u64, mut retval &KtpNik) KtpNikError {
     if nik < min_nik_info {
         return KtpNikError.insufficient_data
     }
