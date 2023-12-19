@@ -9,6 +9,8 @@ v
 
 # Ignore binary output folders
 bin/
+buildDir/
+buildDir/*.*
 
 # Ignore common editor/system specific metadata
 .DS_Store
