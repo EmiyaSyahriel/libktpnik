@@ -1,0 +1,11 @@
+[package]
+name = "ktpnik"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+name = "ktpnik"
+crate-type = ["rlib"]
+path = "src/lib.rs"
+
+[dependencies]
