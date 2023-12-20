@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KTP NIK Parser</title>
+</head>
+<body>
+<input type="number" id="nik_input" min="1101010101000001" max="9999999999999999" value="3502136410016213"/>
+<input type="submit" id="nik_submit">
+<br/>
+<textarea id="nik_result" cols=50 rows=10></textarea>
+<script src="ktpnik.js"></script>
+<script>
+(() => {
+let inp = document.getElementById("nik_input")
+let smb = document.getElementById("nik_submit")
+let oup = document.getElementById("nik_result")
+
+smb.addEventListener("click", (e) => {
+	let v = parseInt(inp.value);
+	let k = {};
+	let err = ktpnik_parse(v, k);
+	switch(err){
+		case KTPNIK_ERR_INSUFFICIENT_DATA:
+			oup.value = "Data is Insufficient, Invalid NIK";
+		break;
+		case KTPNIK_ERR_INVALID_DATE:
+			oup.value = "Invalid Date Notation in NIK";
+		break;
+		case KTPNIK_SUCCESS:
+		let year = `${k.birthyear}`.padStart(2, "0")
+		oup.value = 
+`NIK : ${v}
+Province : ${k.province} 
+City : ${k.city}      
+Region : ${k.region}    
+Birth Date : ${k.birthdate} 
+Birth Month : ${k.birthmonth}
+Birth Year : XX${year}
+Person Unique Index : ${k.uid}
+Is Female : ${k.is_female}`;
+		break;
+		default:
+			oup.value = "Unknown error";
+		break;
+	}
+})
+
+smb.click()
+})();
+</script>
+</body>
+</html>
