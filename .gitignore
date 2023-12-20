@@ -14,3 +14,6 @@ _deps
 *.a
 *.so
 *.elf
+
+
+!V/Makefile
