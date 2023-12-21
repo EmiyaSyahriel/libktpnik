@@ -1,3 +1,6 @@
+// ktpnik/sample - KTP NIK Parsing Library Sample
+//
+// Author : EmiyaSyahriel
 package main
 
 import (

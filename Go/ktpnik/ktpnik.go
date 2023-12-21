@@ -1,20 +1,29 @@
+// ktpnik - KTP NIK Parsing Library
+//
+// Author : EmiyaSyahriel
 package ktpnik
 
 import "errors"
 
+// Data Structure of a KTP NIK
 type KtpNik struct {
-	Province   uint8
-	City       uint8
-	Region     uint8
-	IsFemale   bool
-	BirthDate  uint8
-	BirthMonth uint8
-	BirthYear  uint8
-	Uid        uint16
+	Province   uint8 	// Registration Province
+	City       uint8 	// Registration City or Regency
+	Region     uint8	// Registration Region
+	IsFemale   bool		// Is Resident a Female?
+	BirthDate  uint8	// Birthday Date
+	BirthMonth uint8	// Birthday Month
+	BirthYear  uint8	// Birthday 2-digit Year
+	Uid        uint16	// Person Unique ID
 }
 
+// Minimum value of an KTP NIK, or else insufficient data error will be returned
 const KTPNIK_MIN_VALUE uint64 = 1101010101000001
 
+// Parse NIK Number to KtpNik
+//
+// with nik being the Source KTP NIK and retval is a Reference to 
+// returned NIK Structure.
 func Parse(nik uint64, retval *KtpNik) error {
 	if nik < KTPNIK_MIN_VALUE {
 		return errors.New("Insufficient data")
