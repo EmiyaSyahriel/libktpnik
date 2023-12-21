@@ -1,3 +1,7 @@
+/**
+* ktpnik_sample - KTP NIK Parsing Library Sample
+* @author EmiyaSyahriel
+*/
 module main
 import ktpnik
 
