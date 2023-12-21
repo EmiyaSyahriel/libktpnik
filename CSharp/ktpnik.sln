@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiyaSyahriel.KtpNik", "ktpnik\EmiyaSyahriel.KtpNik.csproj", "{2CC926AC-2644-4AF1-A39F-E1A6A55D2412}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiyaSyahriel.KtpNik.Sample", "sample\EmiyaSyahriel.KtpNik.Sample.csproj", "{DADE046C-65BE-4CCB-BD1E-E8D314C7348E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CC926AC-2644-4AF1-A39F-E1A6A55D2412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC926AC-2644-4AF1-A39F-E1A6A55D2412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC926AC-2644-4AF1-A39F-E1A6A55D2412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC926AC-2644-4AF1-A39F-E1A6A55D2412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADE046C-65BE-4CCB-BD1E-E8D314C7348E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADE046C-65BE-4CCB-BD1E-E8D314C7348E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADE046C-65BE-4CCB-BD1E-E8D314C7348E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADE046C-65BE-4CCB-BD1E-E8D314C7348E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49638448-4287-4E3E-9B17-47CECA69F723}
+	EndGlobalSection
+EndGlobal

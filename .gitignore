@@ -15,5 +15,10 @@ _deps
 *.so
 *.elf
 
-
+# vlang
 !V/Makefile
+
+# CSharp
+CSharp/**/bin/
+CSharp/**/obj/
+CSharp/.vs/
