@@ -3,8 +3,14 @@
  * Licensed in CC-BY-4.0, see https://github.com/EmiyaSyahriel/libktpnik/blob/main/LICENSE
 */
 
+/** Returned by [ktpnik_parse] if parsing success success */
 const KTPNIK_SUCCESS = 0x0
+/** Returned by [ktpnik_parse] if given NIK has less than required data */
 const KTPNIK_ERR_INSUFFICIENT_DATA = 0x86200001
+/** Returned by [ktpnik_parse] if given NIK is contains invalid date, 
+ * > Note: that this only use simple check, treats that all
+ * > months has 31 days and all years has 12 months
+ */
 const KTPNIK_ERR_INVALID_DATE = 0x86200002
 
 /**
