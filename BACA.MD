@@ -1,5 +1,4 @@
 # libktpnik
-[Baca dalam Bahasa Indonesia](BACA.MD)
 Pustaka multibahasa untuk mengurai NIK KTP
 
 ## Warning
