@@ -15,7 +15,7 @@ namespace EmiyaSyahriel.KtpNik.Sample
             KtpNikError err = KtpNik.Parse(SMP_NIK_INFO, ref ktp);
             if(err != KtpNikError.Success)
             {
-                Console.WriteLine();
+                Console.WriteLine($"Error parsing NIK {SMP_NIK_INFO} : {err}");
                 return 1;
             }
 

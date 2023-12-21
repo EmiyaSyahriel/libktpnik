@@ -10,13 +10,21 @@ namespace EmiyaSyahriel.KtpNik
     /// </summary>
     public struct KtpNik
     {
+        /// <summary> Register Province </summary>
         public byte province;
+        /// <summary> Register City / Regency </summary>
         public byte city;
+        /// <summary> Register Region </summary>
         public byte region;
+        /// <summary> Is Resident Female? </summary>
         public bool isFemale;
+        /// <summary> Birth Date </summary>
         public byte birthDate;
+        /// <summary> Birth Month </summary>
         public byte birthMonth;
+        /// <summary> Birth Year </summary>
         public byte birthYear;
+        /// <summary> Person Unique ID </summary>
         public ushort uid;
 
         private const ulong MIN_NIK_INFO = 1101010101000001UL;
