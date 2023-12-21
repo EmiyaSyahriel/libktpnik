@@ -1,6 +1,6 @@
 # libktpnik
 [Baca dalam Bahasa Indonesia](BACA.MD)
--------------------------
+
 Multilingual library to parse KTP NIK (Indonesian Resident Identification Number)
 
 ## Warning
