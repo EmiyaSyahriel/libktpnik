@@ -22,6 +22,12 @@ PRIVATE NIK_ISFEMALE_FLAG =              40ULL
 #define __max(a, b) (((a) > (b)) ? (a) : (b))
 #define __clm(a, b) ((a) % (b))
 
+/**
+ * Parse NIK Number to [KtpNik]
+ * @param nik - Source KTP NIK
+ * @param retval - Reference to a NIK Structure
+ * @returns Error type, [KTPNIK_SUCCESS] if success
+ */
 enum ktpnik_result ktpnik_parse(uint64_t nik, struct ktpnik_t* ktp_nik){
 	if(nik < MIN_NIK_INFO) return KTPNIK_ERROR_INSUFFICIENT_DATA;
 	struct ktpnik_t* k = ktp_nik;

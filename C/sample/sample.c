@@ -1,3 +1,8 @@
+/**
+ * ktpnik_sample - KTP NIK Parsing Library Sample
+ * @author EmiyaSyahriel 
+ */
+
 #include <ktpnik.h>
 #include <stdio.h>
 
