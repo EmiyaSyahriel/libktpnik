@@ -10,6 +10,10 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
+# Editor
+.vs/
+.vscode/
+
 # Build Artifacts
 *.a
 *.so
@@ -22,3 +26,7 @@ _deps
 CSharp/**/bin/
 CSharp/**/obj/
 CSharp/.vs/
+
+# Java (Gradle)
+Java/**/build
+Java/**/bin/
