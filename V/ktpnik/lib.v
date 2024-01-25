@@ -1,8 +1,10 @@
 /**
-* ktpnik - KTP NIK Parsing Library
-* @author EmiyaSyahriel
-*/
-
+ * ktpnik - KTP NIK Parsing Library
+ * @author EmiyaSyahriel
+ * @license CC-BY 4.0, see https://github.com/EmiyaSyahriel/libktpnik/blob/main/LICENSE
+ *     This code is allowed to be copied into your project, but please 
+ * link to the main project and show the license.
+ */
 module ktpnik
 
 /**
