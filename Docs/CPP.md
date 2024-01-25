@@ -3,17 +3,22 @@
 ```cmake
 add_subdirectory(third_party/ktpnik/CPP)
 
+# Link to Shared Library
 target_link_libraries(target_name PRIVATE ktpnik)
-```
-To build, with static link (command line) :
-```bash
-cmake ... -DKTPNIK_STATIC_LIB=ON ...
+
+# Link to Static Library
+target_link_libraries(target_name PRIVATE ktpnik_s)
 ```
 
 ### Prebuild
 ```cmake
 # Assuming you have ktpnik library in your PATH either static or shared library
+
+# Link to Shared Library
 target_link_libraries(target_name PRIVATE ktpnik)
+
+# Link to Static Library
+target_link_libraries(target_name PRIVATE ktpnik_s)
 ```
 
 ## Usage
